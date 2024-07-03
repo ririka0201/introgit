@@ -1,2 +1,56 @@
 １　Gitの練習をしていきます。
 ２　基本的なワークフローを学びます。
+
+rir-tanaka@TS008631 MINGW64 ~
+$ cd ~/Desktop
+
+rir-tanaka@TS008631 MINGW64 ~/Desktop
+$ cd introdit
+bash: cd: introdit: No such file or directory
+
+rir-tanaka@TS008631 MINGW64 ~/Desktop
+$ cd introgit
+
+rir-tanaka@TS008631 MINGW64 ~/Desktop/introgit (master)
+$ ls -a
+./  ../  .git/  first.text
+
+rir-tanaka@TS008631 MINGW64 ~/Desktop/introgit (master)
+$ git add first.text
+
+rir-tanaka@TS008631 MINGW64 ~/Desktop/introgit (master)
+$ git commit
+[master (root-commit) cb1d1b1] initial commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 first.text
+
+rir-tanaka@TS008631 MINGW64 ~/Desktop/introgit (master)
+$ git remote add origin https://github.com/ririka0201/introgit.git
+
+rir-tanaka@TS008631 MINGW64 ~/Desktop/introgit (master)
+$ git push -u origin master
+fatal: unable to access 'https://github.com/ririka0201/introgit.git/': Failed to connect thub.com port 443 after 21144 ms: Couldn't connect to server
+
+rir-tanaka@TS008631 MINGW64 ~/Desktop/introgit (master)
+$ git push -u origin master
+fatal: unable to access 'https://github.com/ririka0201/introgit.git/': Failed to connect thub.com port 443 after 21056 ms: Couldn't connect to server
+
+rir-tanaka@TS008631 MINGW64 ~/Desktop/introgit (master)
+$ git push -u origin master
+fatal: unable to access 'https://github.com/ririka0201/introgit.git/': Failed to connect thub.com port 443 after 21101 ms: Couldn't connect to server
+
+rir-tanaka@TS008631 MINGW64 ~/Desktop/introgit (master)
+$ git remote add origin https://github.com/ririka0201/introgit.git
+error: remote origin already exists.
+
+rir-tanaka@TS008631 MINGW64 ~/Desktop/introgit (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/ririka0201/introgit.git'
+
+rir-tanaka@TS008631 MINGW64 ~/Desktop/introgit (master)
+$ git remote add origin https://github.com/ririka0201/introgit.git
+error: remote origin already exists.
+
+rir-tanaka@TS008631 MINGW64 ~/Desktop/introgit (master)
+$ git config --global
